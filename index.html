@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login form</title>
+    <link rel="stylesheet" href="dist/css/style.css">
+    <link rel="icon" href="logo icon.png">
+    <script src="https://kit.fontawesome.com/2caacbe320.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+
+    <div class="main-wrapper">
+        <div class="form">
+            <div class="user-icon">
+                <i class="fa-solid fa-user"></i>
+            </div>
+
+            <form id="form">
+
+                <label for="userName">user name:</label>
+                <input type="text" class="input" name="userName" id="userName" tabindex="1" minlength="3" maxlength="15"
+                    pattern="[a-zA-z0-9]+" required><br>
+
+                <label for="password">password:</label>
+                <input type="password" class='input' name="password" id="password" tabindex="2" minlength="10"
+                    maxlength="20" pattern="[a-zA-z0-9]+" required><br>
+                <input type="submit" value="Submit" class="submit" onclick="validateForm()">
+            </form>
+        </div>
+
+
+
+        <div class="show-details">
+            <p> for correct user name and password:</p>
+            <button onclick="showDetails()">click here </button>
+            <div class="details">
+                <p>correct user name: christina8</p>
+                <p>correct password: happybirthday2u</p>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
